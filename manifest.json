@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "ChemSub",
+	"description": "Replaces common chemical formulae with versions using subscripts.",
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches": [
+				"file://*/*",
+				"http://*/*",
+				"https://*/*"
+			],
+			"js":  [
+				"chemsub.js"
+			],
+			"run_at": "document_end"
+		}
+	]
+}
